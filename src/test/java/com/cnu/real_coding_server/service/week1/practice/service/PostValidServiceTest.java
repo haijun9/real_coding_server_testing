@@ -62,7 +62,7 @@ public class PostValidServiceTest {
         boolean validNoneSlangContent = postValidService.isSlangInclude(slangList, testNoneSlangTitle, testNoneSlangContent);
         // then 검증
         assertAll("verify object",
-                ()->assertThat(validSlangContent).isEqualTo(true),
+                ()->assertThat(validSlangContent).isEqualTo(true) ,
                 ()->assertThat(validNoneSlangContent).isEqualTo(false)
         );
     }
